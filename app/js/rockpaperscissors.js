@@ -84,14 +84,13 @@ function playToFive() {
         else if (winner=='Computer'){
             computerWins +=1;
         }
-        
+      console.log("The Winner is "+winner+"!")  
     console.log("Player has "+playerWins+" points and computer has "+computerWins+" points");
     
     if (playerWins== 5){
-    console.log('Player Wins!');}
-
+    console.log("Player Wins by "+playerWins+" points to "+computerWins+".");}
         if (computerWins== 5){
-    console.log('Computer Wins!');
+    console.log("Computer Wins by "+computerWins+" points to "+playerWins+".");
 }}
     getWinner(playerMove, computerMove)
     return [computerWins, playerWins];
